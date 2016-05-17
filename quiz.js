@@ -37,5 +37,7 @@ function NotesApplication(author){
 	this.delete= function(note_id){
 		delete this.notes[note_id];
 	};
-	
+	this.edit=function(note_id, new_content){
+		this.notes[note_id]=new_content;
+	};
 }
