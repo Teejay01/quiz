@@ -34,4 +34,8 @@ function NotesApplication(author){
 			return "No result.";
 		}
 	};
+	this.delete= function(note_id){
+		delete this.notes[note_id];
+	};
 	
+}
