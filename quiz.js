@@ -26,4 +26,12 @@ function NotesApplication(author){
 	this.get=function (note_id){
 		return "Note ID: "+ this.notes[note_id];
 	};
+	this.search=function(search_text){
+		if(this.notes.includes(search_text)){
+			return "Note ID: "+ this.note_id+"\n"+note_content+"\n\n"+ "By Author " +this.author;
+		}
+		else{
+			return "No result.";
+		}
+	};
 	
